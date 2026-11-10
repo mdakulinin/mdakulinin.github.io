@@ -1,47 +1,34 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>My Academic Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mikhail Akulinin — bioinformatics, computational biology, phylogenetics and population genomics.">
+  <meta name="theme-color" content="#0a192f">
+  <title>Mikhail Akulinin | Bioinformatics & Computational Biology</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #24292f;
-    }
-    h1, h2 { color: #0969da; }
-    a { color: #0969da; }
+    :root{--bg:#f6f8fb;--paper:#fff;--ink:#14243b;--muted:#58677b;--accent:#087d86;--line:#e3eaf0;--navy:#0a192f;--max:1080px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink)}a{color:var(--accent)}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible{outline:3px solid #00a6ac;outline-offset:3px}header{background:var(--navy);color:#fff}nav{max-width:var(--max);margin:auto;padding:20px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}nav .brand{font-weight:800;font-size:1.1rem;letter-spacing:.01em}nav a{color:#e5f3f5;text-decoration:none;margin-left:22px;font-size:.92rem}nav a:hover{color:#70d4cc}.hero{max-width:var(--max);margin:auto;padding:88px 28px 94px}.eyebrow{color:#77ddd2;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;font-weight:800}.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.1;margin:14px 0 20px;letter-spacing:-.045em}.hero p{max-width:660px;color:#c3d2e3;font-size:1.18rem;margin:0 0 28px}.hero .actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-block;border:1px solid #69c7c4;border-radius:8px;color:#fff;text-decoration:none;padding:10px 19px;font-weight:650}.button.primary{background:#087d86;border-color:#087d86}.button:hover{background:#106978}.wrap{max-width:var(--max);margin:auto;padding:0 28px}section{padding:64px 0;scroll-margin-top:30px}h2{font-size:1.8rem;letter-spacing:-.025em;margin:0 0 22px}h3{margin:0 0 8px;line-height:1.35}section>p,.intro{max-width:800px;color:var(--muted)}.section-tag{display:inline-block;font-weight:700;text-transform:uppercase;color:var(--accent);font-size:.75rem;letter-spacing:.13em;margin-bottom:7px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 4px 16px rgba(10,25,47,.035)}.card p{color:var(--muted);margin:0}.chip{display:inline-block;background:#e7f5f4;color:#09646a;border-radius:40px;padding:3px 11px;font-size:.77rem;font-weight:700;margin:0 6px 12px 0}.full{grid-column:1/-1}.subtle{color:var(--muted)}.research-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.research-item{padding:20px;background:#edf4f7;border:1px solid #dde9ef;border-radius:12px;font-weight:650}.contact{background:#eaf2f4;border-radius:16px;padding:30px}.contact a{font-weight:700}.footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.88rem}@media(max-width:720px){nav{align-items:flex-start}nav .links{display:flex;flex-wrap:wrap;gap:6px 16px}nav a{margin:0}.hero{padding-top:64px;padding-bottom:70px}.grid,.research-list{grid-template-columns:1fr}section{padding:46px 0}.card{padding:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-  <h1>Mikhail Akulinin</h1>
-  <p>Bioinformatics | Computational Biology</p>
-
-  <h2>About Me</h2>
-  <p>I am interested in computational biology,
-     population genetics, and phylogenetics.</p>
-
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Phylogenetic reconstruction</li>
-    <li>Population genomics</li>
-    <li>Bioinformatics algorithms</li>
-  </ul>
-
-  <h2>Projects</h2>
-  <p>My research projects will appear here.</p>
-
-  <h2>Contact</h2>
-  <p>
-    <a href="https://github.com/mdakulinin">
-      GitHub Profile
-    </a>
-  </p>
+  <header>
+    <nav aria-label="Main navigation"><div class="brand">Mikhail Akulinin</div><div class="links"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+    <div class="hero"><div class="eyebrow">Bioinformatics · Computational Biology</div><h1>Mikhail Akulinin</h1><p>Exploring evolutionary history through genomic data, phylogenetic inference, and computational methods.</p><div class="actions"><a class="button primary" href="#projects">Explore projects</a><a class="button" href="https://github.com/mdakulinin" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div></div>
+  </header>
+  <main class="wrap">
+    <section id="about"><div class="section-tag">Introduction</div><h2>About me</h2><p class="intro">I am a master's student in Data Analysis in Biology and Medicine, with an undergraduate background in biotechnology. My interests lie at the intersection of bioinformatics, population genetics, and algorithm development for evolutionary analysis.</p><p class="intro">I work with large-scale genomic datasets and am particularly interested in computationally efficient, reproducible phylogenetic methods.</p></section>
+    <section id="research"><div class="section-tag">Focus areas</div><h2>Research interests</h2><div class="research-list"><div class="research-item">Phylogenetic inference and tree algorithms</div><div class="research-item">Human mitochondrial DNA and paternal lineages</div><div class="research-item">Microbial population genomics</div></div></section>
+    <section id="projects"><div class="section-tag">Selected work</div><h2>Research projects</h2><div class="grid">
+      <article class="card"><span class="chip">Ongoing research</span><h3>Large-scale human mtDNA phylogenetics</h3><p>Reconstructing and refining phylogenetic relationships among large collections of mitochondrial genomes. Topics include sequence quality control, haplogroup references, likelihood-based placement, and scalable tree updates.</p></article>
+      <article class="card"><span class="chip">Algorithm development</span><h3>Scalable phylogenetic tree construction</h3><p>Exploring compressed sequence representations, cached likelihood calculations, stepwise taxon placement, and local topology refinement for large datasets.</p></article>
+      <article class="card"><span class="chip">Population genomics</span><h3><em>Faecalibacterium</em> comparative genomics</h3><p>Comparative analysis of bacterial genomes, including species-level relationships, population structure, pangenome variation, and antimicrobial resistance annotations.</p></article>
+      <article class="card"><span class="chip">Research direction</span><h3>Maternal and paternal lineage reconstruction</h3><p>Studying the complementary phylogenetic information provided by mitochondrial DNA and Y-chromosomal variation in population-scale datasets.</p></article>
+    </div><p class="subtle">Publications, code repositories, and verified project outputs can be linked here as they become available.</p></section>
+    <section id="contact"><div class="section-tag">Connect</div><h2>Contact & profiles</h2><div class="contact">Find my current code and public work on <a href="https://github.com/mdakulinin" target="_blank" rel="noopener noreferrer">GitHub — @mdakulinin</a>.<p class="subtle">Academic email, ORCID, and publication links can be added here once confirmed.</p></div></section>
+  </main>
+  <footer class="footer"><div class="wrap">© <span id="year">2026</span> Mikhail Akulinin · Built with HTML and CSS · Hosted with GitHub Pages</div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
